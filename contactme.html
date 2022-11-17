@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class = "container">
+    <header>
+     <div class="sidebar sidebar-go">
+     <nav>
+        <ul>
+           <li> <a href="home.html"> Home </a></li>
+            <li> <a href="about.html"> About</a> </li> <!-- will add a link to the next page -->
+            <li> <a href="myprojects.html">Projects</a></li> <!-- will add a link to the next page -->
+            <li> <a href="contactme.html">Contact</a> </li> <!-- will add a link to the next page -->
+        </ul>
+     </nav>
+   </div>
+    </header>
+  
+   <div class = "main">
+    <div class="openingside">
+      <img class = "opening" src= "sideopening.png" width="23" alt = "Opening SideBar">
+      <img class = "closing" src= "cross.png" width="23" alt =  "Closing SideBar">
+    </div>
+    <div class = "contactform">
+        <h1>Contact me for work/general quieres</h1>
+        <form>
+
+            
+            <div class="mb-3">
+                <label for="clientname" class="form-label">Name</label>
+                <input type="phone" class="form-control" id="clientname">
+              </div>
+
+            <div class="mb-3">
+              <label for="clientemail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="clientphonenumber" class="form-label">Phone Number</label>
+              <input type="phone" class="form-control" id="clientphonenumber">
+            </div>
+
+            <div class="mb-3">
+                <label for="clinetsenquiry" class="form-label"> Enquiry</label>
+                <input type="text" class="form-control" id="clinetsenquiry">
+              </div>
+
+            <div class="mb-3" id = "form-check">
+              <input type="checkbox" class="form-check-input" id="isclient">
+              <label class="form-check-label" for="isclient">Work on a Project with me</label>
+            </div>
+            <button type="submit" class="btn btn_sm">Submit</button>
+          </form>
+        </div>
+   </div>
+</div>
+
+<footer>
+  <div class="footercontent">
+
+    <h3>ME...</h3>
+    <p>Copyright 2022 | Mohsin Ali Irfan</p>
+
+    <ul class = "flex-row-icons">
+      <li>
+         <a href="https://github.com/MohsinAliIrfan"><i class="fa-brands fa-github"></i> </a>
+        </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mohsin-ali-irfan-922912166/"><i class="fa-brands fa-linkedin"></i> </a>
+      </li>
+   </ul>
+   
+  </div>
+</footer>
+<script src = "script.js"> </script>
+<script src="https://kit.fontawesome.com/30449b18e0.js" crossorigin="anonymous"></script>
+</body>
+</html>
