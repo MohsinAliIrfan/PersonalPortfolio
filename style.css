@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Sora:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: #004a99;
+}
+.sidebar:first-of-type li{
+    font-size: 27px;
+    margin: 35px 0;
+    margin-left: 25px;
+}
+/* accsing the links text from list tag that is inside the sidebar div class*/
+.sidebar:first-of-type li a{
+    font-family: 'Abhaya Libre', serif;
+    color: inherit;
+    text-decoration: inherit;
+    color: antiquewhite;
+}
+.sidebar:first-of-type nav{
+    padding: 45px;
+}
+
+.sidebar{
+    transition: absolute;
+    /* width:15vw; */
+    height: 100vw; 
+    /* background: linear-gradient(#e66465, #9198e5);  */
+    background: linear-gradient(#004a99, #02264d);
+    transition: transform 0.3s ease-in-out;
+} 
+
+.main {
+    /* background-color: aqua; */
+    width: 85vw;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /* background-color: rgb(189, 202, 9);  */
+    width: 180vh;
+    margin: 144px auto;
+    height: 58vh;
+    display: flex;
+    justify-content: space-around;
+}
+.infodev{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;     
+}
+.infodev h2, h3{
+    margin-top: 10px;
+    text-shadow: 3px 3px 4px darkgrey;
+    color: black;
+}
+
+.infodev h2{
+    font-size: 45px;
+    font-family: 'Sora', sans-serif;
+    font-weight: lighter;
+}
+.infodev  h3:first-of-type{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Sora', sans-serif;
+    transition-duration: 2s, 1s, 1s;
+    
+}
+.infodev h3:first-of-type:hover{
+    color: brown
+}
+
+
+/* APPLYING TEXT ANIMATION*/
+.about {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Sora', sans-serif;
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.moving-text{
+    font-size: 20px;
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.moving-text li{
+    color: #004a99;
+    list-style: none;
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    animation: move 6s steps(4) infinite;
+
+}
+
+@keyframes move {
+    100%{
+        top:  -360px;
+    }
+    
+}
+
+.moving-text li span:after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left:2px solid #01fe87;
+    animation: type 1.5s steps(10) infinite;
+}
+
+@keyframes type{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.infodev h3:last-of-type{
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Sora', sans-serif;
+    font-weight: lighter;
+}
+
+.btn{
+    font-size: 35px;
+
+}
+
+.btn{
+    margin-top: 20px;
+    padding:9px  14px ;
+    border-radius: 22px ;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #004a99;
+    color: white;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.imagedev img{
+    border-radius: 22px;
+    margin-left: 80px;
+    width: 350px;
+    height: 70vh;
+    max-width: 100%;
+    display: block;
+}
+
+.btn_sm{
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+
+.contactform{
+    padding: 0 34px;
+    padding-top: 100px;
+}
+
+.contactform h1{
+    font-size: 37px;
+    font-family: 'Sora', sans-serif;
+    /* font-weight: lighter; */
+    text-align: center;
+    padding-bottom: 13px;
+    color: #004a99;
+
+}
+
+.contactform form div{
+    padding: 10px 0 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    width: 16vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.contactform :first-of-type div div{
+    color: midnightblue;
+    font-size: 8px;
+    margin: 0 5px;
+}
+
+.contactform div:nth-child(5){
+    flex-direction: row;
+}
+.contactform div:nth-child(5) input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+.aboutcontainer{
+    margin-left: 80px; 
+}
+
+.aboutme{
+    /* box-shadow: 0 8px 6px -6px black;  */
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.skillscontainer{
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.aboutcontainer h2{
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 45px;
+    text-shadow: 10px 10px 12px lightgray;
+    font-family: 'Sora', sans-serif;
+}
+
+article{
+    /* font-family: 'Abhaya Libre', serif;
+    text-shadow: 10px 10px 14px lightgray;
+    font-weight: lighter;
+    margin-top: 12px;
+    margin-left: 2px;
+    font-size: 20px; */
+
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Sora', sans-serif;
+    font-weight: light;
+}
+
+
+.skillscontainer ol{
+    margin-top: 18px;
+    margin-left: 25px;
+    margin-bottom: 3px;
+}
+
+.parent{
+    height: 10px;
+    margin-top: 5px;
+    background-color: lightgrey ;
+    width: 300px;
+}
+.skillset{
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px #D3D3D3
+}
+.parent .skillsknowledge {
+    padding: 2px 3px 3px 3px ;
+    height: 3px;
+    background-color: red;
+    margin-left: 1px;
+} 
+
+.parent:first-of-type .skillsknowledge{
+    width: 200px;
+}
+.parent:nth-of-type(2) .skillsknowledge{
+    width: 180px;
+}
+.parent:nth-of-type(3) .skillsknowledge{
+    width: 150px;
+}
+.parent:nth-of-type(4) .skillsknowledge{
+    width: 210px;
+}
+.parent:nth-of-type(5) .skillsknowledge{
+    width: 210px;
+}
+.parent:nth-of-type(6) .skillsknowledge{
+    width: 220px;
+}
+.parent:nth-of-type(7) .skillsknowledge{
+    width: 220px;
+}
+.parent:nth-of-type(8) .skillsknowledge{
+    width: 175px;
+}
+.parent:nth-of-type(9) .skillsknowledge{
+    width: 150px;
+}
+
+.parent:last-of-type .skillsknowledge{
+    width: 200px;
+}
+
+.openingside{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left:10px
+}
+
+.closing{
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+.sidebar-go{
+    transform: translate(-240px, 0px);
+    position: absolute;
+}
+
+@media (max-width: 1000px){
+    /* .sidebar{
+        transform: translate(-240px, 0px);
+        position: absolute;
+    } */
+
+    .main{
+        margin-left: 10px;
+    }
+
+    .imagedev{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1001px){
+    .imagedev{
+        margin-left: 30px;
+    }
+
+    /* .infodev h1{
+        font-size: small;
+    } */
+}
+
+footer{
+    margin-top: 10px;
+    color: #ffff;
+    background-color: #004a99;
+
+} 
+
+footer .footercontent{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footercontent ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*this will allow to wrap contents to a new line when the space is less */
+
+}
+
+.footercontent ul li{
+    padding:0 10px;
+    margin-bottom: 16px;
+}
+
+.footercontent ul li i{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+.footercontent h3{
+    color: white;
+    text-align: center;
+}
+.footercontent p{
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+/* .myprojectsmain{
+    margin-left: 50px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+} */
+
+.myProjectsHeading{
+    margin-top: 30px;
+    text-align: center;
+    color: #004a99;
+    /* font-family: 'Sora', sans-serif; */
+    font-family: 'Abhaya Libre', serif;
+    font-size: 20px;
+
+}
+
+.myprojects{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.project{
+    margin-top: 40px;
+}
+.project h3{
+    font-family: 'Sora', sans-serif;
+    color: blue;
+    font-size: 25px;
+}
+.project p:nth-child(even) {
+    color: lightslategray;
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.project p:nth-child(odd) {
+    font-family: 'Abhaya Libre', serif;
+    margin-top: 4px;
+    font-size: 20px;
+}
